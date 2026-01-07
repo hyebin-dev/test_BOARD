@@ -21,9 +21,6 @@ import java.io.IOException;
 @Configuration
 public class DatabaseConfig {
 
-//    @Autowired
-//    private ApplicationContext applicationContext;
-
     @Value("${mybatis.mapper-locations}")
     private String mapperLocation;
 
