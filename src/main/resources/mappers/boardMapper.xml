@@ -21,10 +21,7 @@
         select count(bno) from board where is_del = 'N'
         <include refid="search"></include>
     </select>
-    <update id="update">
-        update board set title = #{title}, content = #{content}
-        where bno = #{bno}
-    </update>
+    <select id="test"></select>
     <update id="delete">
         update board set is_del = "Y"
             where bno = #{bno}
